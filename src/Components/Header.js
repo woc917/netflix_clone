@@ -1,26 +1,46 @@
 import React, { Component } from 'react';
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
+import styled from 'styled-components';
 
-export default class Header extends Component {
-    render() {
-        return (
-            <header>
-                <ul>
 
-                    <li>
-                        <Link to="/">Movies</Link>
-                    </li>
 
-                    <li>
-                        <Link to="/tv">TV</Link>
-                    </li>
+const Header = styled.header`
 
-                    <li>
-                        <Link to="/search">Search</Link>
-                    </li>
+`;
 
-                </ul>
-            </header>
-        )
-    }
-}
+
+const List = styled.ul`
+    display: flex;
+`;
+
+const Li = styled.li`
+
+`;
+
+const SLink = styled(Link)`
+
+`;
+
+
+
+export default () => (
+        
+            <Header>
+                <List>
+
+                    <Li>
+                        <SLink to="/">Movies</SLink>
+                    </Li>
+
+                    <Li>
+                        <SLink to="/tv">TV</SLink>
+                    </Li>
+
+                    <Li>
+                        <SLink to="/search">Search</SLink>
+                    </Li>
+
+                </List>
+            </Header>
+        
+    );
