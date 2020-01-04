@@ -1,7 +1,7 @@
 ## 넷플릭스 클론
 
 ## Screens
-- [ ] Home
-- [ ] TV Shows
-- [ ] Search
+- [x] Home
+- [x] TV Shows
+- [x] Search
 - [ ] Detail
