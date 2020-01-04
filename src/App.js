@@ -17,6 +17,7 @@
 import React, { Component } from 'react'
 import './App.css';
 import Router from './Components/Router';
+import GlobalStyle from './Components/GlobalStyle';
 
 export default class App extends Component {
 
@@ -32,6 +33,7 @@ export default class App extends Component {
       
       <>
         <Router />
+        <GlobalStyle />
       </>
 
     )
