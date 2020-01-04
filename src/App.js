@@ -16,6 +16,7 @@
 
 import React, { Component } from 'react'
 import './App.css';
+import Router from './Components/Router';
 
 export default class App extends Component {
 
@@ -28,9 +29,11 @@ export default class App extends Component {
     // 리턴에서 사용될 상태값, 함수에 대한 상수 선언
 
     return (
-      <div className="App">
-        <h1>Hello world!</h1>
-      </div>
+      
+      <>
+        <Router />
+      </>
+
     )
 
   }
