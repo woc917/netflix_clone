@@ -13,8 +13,6 @@ export default class HomeContainer extends Component {
     };
     
     //네트워크 태우기
-
-
     async componentDidMount() {
         try {
             const {
@@ -38,7 +36,7 @@ export default class HomeContainer extends Component {
         } finally {
             this.setState({
                 loading: false
-            })
+            });
         }
     }
 
@@ -48,7 +46,7 @@ export default class HomeContainer extends Component {
 
         const { nowPlaying, upcoming, popular, loading, error } = this.state;
 
-        console.log(nowPlaying);
+        console.log("Now Playing:", nowPlaying);
 
 
         return (
