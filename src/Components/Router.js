@@ -11,7 +11,6 @@ export default () => (
         <Switch>
             <Route path="/" exact component={Home} />
             <Route path="/tv" component={TV} />
-            <Route path="/search" component={Search} /> 
             <Redirect from="*" to="/" />
         </Switch>
     </Router>
